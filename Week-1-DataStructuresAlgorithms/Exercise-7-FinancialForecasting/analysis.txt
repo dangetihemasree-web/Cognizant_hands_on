@@ -1,0 +1,15 @@
+Recursion:
+Recursion is a programming technique where a method calls itself to solve smaller instances of the same problem until a base condition is reached.
+
+How does recursion simplify problems?
+Recursion breaks a complex problem into smaller and simpler subproblems. It is useful for problems that have repetitive structures.
+
+Time Complexity
+The recursive algorithm makes one recursive call for each year. Therefore, the time complexity is O(n), where n is the number of years.
+
+How can the recursive solution be optimized?
+Excessive recursive calls can increase memory usage and execution time. Optimization techniques include:
+1.Memoization (storing previously computed results)
+2.Dynamic Programming
+3.Using an iterative approach instead of recursion
+These techniques reduce redundant computations and improve performance.
