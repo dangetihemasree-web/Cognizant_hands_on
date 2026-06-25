@@ -1,0 +1,11 @@
+Scenario1:
+Discount applied for Customer ID: 101
+Discount applied for Customer ID: 105
+
+Scenario2:
+VIP status granted to Customer ID: 102
+VIP status granted to Customer ID: 104
+
+Scenario3:
+Reminder: Loan ID 201 for Customer 101 is due on 10-JUL-26
+Reminder: Loan ID 205 for Customer 104 is due on 15-JUL-26
