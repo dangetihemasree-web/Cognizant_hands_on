@@ -1,0 +1,7 @@
+JUnit setup completed successfully.
+
+Test Case:
+2 + 2 = 4
+
+Result:
+Test Passed
