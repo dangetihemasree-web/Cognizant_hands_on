@@ -1,0 +1,27 @@
+19:37:19.054 [main] INFO com.cognizant.spring_learn.SpringLearnApplication -- Inside main method
+19:37:19.661 [restartedMain] INFO com.cognizant.spring_learn.SpringLearnApplication -- Inside main method
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.0)
+
+2026-07-14T19:37:20.743+05:30  INFO 9588 --- [spring-learn] [  restartedMain] c.c.spring_learn.SpringLearnApplication  : Starting SpringLearnApplication using Java 26.0.1 with PID 9588 (C:\Users\DELL\IdeaProjects\spring-learn\target\classes started by DELL in C:\Users\DELL\IdeaProjects\spring-learn)
+2026-07-14T19:37:20.747+05:30  INFO 9588 --- [spring-learn] [  restartedMain] c.c.spring_learn.SpringLearnApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-07-14T19:37:20.914+05:30  INFO 9588 --- [spring-learn] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-14T19:37:20.915+05:30  INFO 9588 --- [spring-learn] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-14T19:37:23.539+05:30  INFO 9588 --- [spring-learn] [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8083 (http)
+2026-07-14T19:37:23.609+05:30  INFO 9588 --- [spring-learn] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-14T19:37:23.610+05:30  INFO 9588 --- [spring-learn] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-14T19:37:23.740+05:30  INFO 9588 --- [spring-learn] [  restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2824 ms
+2026-07-14T19:37:24.932+05:30  INFO 9588 --- [spring-learn] [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8083 (http) with context path '/'
+2026-07-14T19:37:24.943+05:30  INFO 9588 --- [spring-learn] [  restartedMain] c.c.spring_learn.SpringLearnApplication  : Started SpringLearnApplication in 5.269 seconds (process running for 7.573)
+2026-07-14T19:37:24.952+05:30  INFO 9588 --- [spring-learn] [  restartedMain] c.c.spring_learn.SpringLearnApplication  : --- Starting displayCountry Method ---
+2026-07-14T19:37:25.255+05:30  INFO 9588 --- [spring-learn] [  restartedMain] c.c.spring_learn.SpringLearnApplication  : Country : Country [code=IN, name=India]
+2026-07-14T19:39:17.630+05:30  INFO 9588 --- [spring-learn] [nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-14T19:39:17.634+05:30  INFO 9588 --- [spring-learn] [nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-14T19:39:17.643+05:30  INFO 9588 --- [spring-learn] [nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
