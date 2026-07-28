@@ -1,63 +1,73 @@
-Git HOL 1 - Setup Git Configuration
-
-Based on the uploaded Git HOL.
+# Git Hands-On Lab
 
 Objective
+The objective of this hands-on is to learn the basic Git commands such as git init, git status, git add, git commit, git push and git pull. It also helps in understanding how to create a local repository and connect it with a remote GitHub repository.
 
--   Familiarize yourself with basic Git configuration.
--   Configure Git with your username and email.
--   Verify the configuration.
+Software Used:
+Git Bash
+GitHub
+Notepad++
 
-------------------------------------------------------------------------
+Procedure:
 
-Step 1: Check Git Installation
+1. First I checked whether Git was installed on my system.
+Command:
+git --version
 
-Command git –version
+2. Then I configured my Git username and email.
+Commands:
+git config --global user.name "Hema Sree"
+git config --global user.email "hemasreedangeti@gmail.com"
+To verify the configuration:
+git config --global --list
 
-Explanation Checks whether Git is installed correctly and displays the
-installed version.
+3. Installed Notepad++ and configured it as the default Git editor.
+Commands:
+"/c/Program Files/Notepad++/notepad++.exe"
+git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
+git config --global core.editor
 
-Expected Output git version 2.xx.x.windows.x
+4. Created a new project folder named GitDemo.
+Commands:
+cd OneDrive
+cd Desktop
+mkdir GitDemo
+cd GitDemo
+git init
+ls -la
 
-------------------------------------------------------------------------
+5. Created a text file named welcome.txt.
+Command:
+echo "Welcome to Git Hands-On Lab" > welcome.txt
+To verify the file:
+ls
+To display the contents:
+cat welcome.txt
+Checked the repository status:
+git status
 
-Step 2: Configure Git Username
+6. Added the file to the staging area.
+Command:
+git add welcome.txt
+Checked the status again.
+Command:
+git status
 
-Command git config –global user.name “Your Name”
+7. Committed the file to the local repository.
+Command:
+git commit
+Commit message used:
+Added welcome.txt file
 
-Explanation Sets the global username used in all Git commits.
+8. Connected the local repository with the GitHub repository.
+Commands:
+git remote add origin https://github.com/hemasreedangeti/GitDemo.git
+git remote -v
+git branch -M main
 
-Expected Output No output (command executes successfully).
+9. Pushed the local repository to GitHub.
+Command:
+git push -u origin main
 
-------------------------------------------------------------------------
-
-Step 3: Configure Git Email
-
-Command git config –global user.email “your_email@example.com”
-
-Explanation Sets the global email address associated with your commits.
-
-Expected Output No output.
-
-------------------------------------------------------------------------
-
-Step 4: Verify Git Configuration
-
-Command git config –global –list
-
-Explanation Displays the current global Git configuration.
-
-Expected Output user.name=Your Name user.email=your_email@example.com
-
-------------------------------------------------------------------------
-
-Summary
-
-  Command                         Purpose
-  ------------------------------- ---------------------------------
-  git –version                    Checks Git installation.
-  git config –global user.name    Sets the Git username.
-  git config –global user.email   Sets the Git email.
-  git config –global –list        Verifies the Git configuration.
-
-This completes Git HOL 1: Setup Git Configuration.
+Result:
+Successfully configured Git, created a local repository, added a file, committed the changes, connected the local repository to GitHub and pushed the project successfully.
