@@ -1,96 +1,66 @@
-Git HOL 2 - Implement .gitignore
+# Git Ignore Hands-On Lab
 
-Based only on the uploaded Git HOL.
+Objective:
+The objective of this hands-on is to understand the use of .gitignore file and learn how to ignore unwanted files and folders from being tracked by Git.
 
-Objective
+Software Used:
+Git Bash
+GitHub
+Notepad++
 
--   Understand Git Ignore.
--   Ignore unwanted files and folders using .gitignore.
+Procedure:
 
-------------------------------------------------------------------------
+1. Opened the existing Git repository.
+Commands:
+cd OneDrive
+cd Desktop
+cd GitDemo
 
-Step 1: Open the Existing Git Repository
+2. Created a sample log file.
+Command:
+echo "This is a sample log file" > sample.log
 
-Command cd GitDemo
+3. Created a log folder.
+Command:
+mkdir log
 
-Explanation Moves into the existing Git repository.
+4. Created a .gitignore file.
+Command:
+touch .gitignore
 
-Expected Output No output.
+5. Opened the .gitignore file using Notepad.
+Command:
+notepad .gitignore
+Added the following lines in the .gitignore file.
 
-------------------------------------------------------------------------
+*.log
+log/
 
-Step 2: Create a Log File
+Saved the file and closed Notepad.
 
-Command echo “Application Log” > app.log
+6. Checked the repository status.
+Command:
+git status
+Verified that sample.log and log folder were ignored and only .gitignore was shown as an untracked file.
 
-Explanation Creates a sample log file that should later be ignored by
-Git.
+7. Added the .gitignore file to the staging area.
+Command:
+git add .gitignore
 
-Expected Output No output.
+8. Checked the status again.
+Command:
+git status
 
-------------------------------------------------------------------------
+9. Committed the changes.
+Command:
+git commit
 
-Step 3: Create a Log Folder
+Commit Message:
+Added .gitignore file
 
-Command mkdir log
+10. Pushed the changes to GitHub.
+Command:
+git push
 
-Explanation Creates a folder named log.
-
-Expected Output No output.
-
-------------------------------------------------------------------------
-
-Step 4: Create a .gitignore File
-
-Command notepad .gitignore
-
-Explanation Opens or creates the .gitignore file.
-
-Expected Output The editor opens.
-
-------------------------------------------------------------------------
-
-Step 5: Add Ignore Rules
-
-Content of .gitignore *.log log/
-
-Explanation - *.log ignores all files with the .log extension. - log/
-ignores the entire log folder.
-
-Save and close the file.
-
-------------------------------------------------------------------------
-
-Step 6: Verify Repository Status
-
-Command git status
-
-Explanation Checks whether Git ignores the .log files and log directory.
-
-Expected Output The ignored files and folders should not appear in the
-untracked files list. Only .gitignore (if newly created) may appear.
-
-------------------------------------------------------------------------
-
-Step 7: Commit the .gitignore File
-
-Command git add .gitignore git commit -m “Added .gitignore”
-
-Explanation Adds and commits the ignore rules.
-
-Expected Output A successful commit message is displayed.
-
-------------------------------------------------------------------------
-
-Summary
-
-  Command                            Purpose
-  ---------------------------------- ----------------------------
-  echo “Application Log” > app.log   Creates a sample log file.
-  mkdir log                          Creates a log folder.
-  notepad .gitignore                 Opens the ignore file.
-  git status                         Verifies ignored files.
-  git add .gitignore                 Stages the ignore file.
-  git commit -m “Added .gitignore”   Saves the changes.
-
-This completes Git HOL 2: Implement Git Ignore.
+Result:
+Successfully created a .gitignore file to ignore .log files and log folders. Verified using git status that the ignored files were not tracked by Git and pushed the changes successfully to GitHub.
